@@ -23,8 +23,14 @@ $database = new medoo([
 6. Check, do you copy **/lib/medoo.php**
 7. Run **index.php**
 
+
 ## Don't forget to `make backup` of you current WordPress database before running this script!!!
 
 If you have some questions or proposition, please write me an email: bars38@gmail.com
 
 ##### Thanks to [catfan](https://github.com/catfan) for [Medoo](https://github.com/catfan/Medoo)
+
+P.S. May be you will need to run query after all
+```
+UPDATE wp_posts SET guid = replace(guid, 'http://www.oldsite.com','http://newsite.com');
+```
