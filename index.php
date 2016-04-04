@@ -8,7 +8,7 @@
         <?php
 
         echo "Let's go!<br>";
-exit;
+//exit;
 require  'lib/medoo.php';
 $i = '0';
 
